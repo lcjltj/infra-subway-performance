@@ -44,26 +44,26 @@ npm run dev
 
 ### 1단계 - 화면 응답 개선하기
 1. 성능 개선 결과를 공유해주세요 (Smoke, Load, Stress 테스트 결과)
-    step1 folder 참조
+   step1 folder 참조
 2. 어떤 부분을 개선해보셨나요? 과정을 설명 해주세요
-    gzip 압축 설정
-    cache 및 TLS 설정
-    경로 조회 캐싱 설정
+   gzip 압축 설정
+   cache 및 TLS 설정
+   경로 조회 캐싱 설정
 ---
 
 ### 2단계 - 스케일 아웃
 
 1. Launch Template 링크를 공유해주세요.
-https://ap-northeast-2.console.aws.amazon.com/ec2/v2/home?region=ap-northeast-2#LaunchTemplateDetails:launchTemplateId=lt-0977fe629ce708f90
-   
+   https://ap-northeast-2.console.aws.amazon.com/ec2/v2/home?region=ap-northeast-2#LaunchTemplateDetails:launchTemplateId=lt-0977fe629ce708f90
+
 2. cpu 부하 실행 후 EC2 추가생성 결과를 공유해주세요. (Cloudwatch 캡쳐)
-  step2 cloud watch 이미지 참조
+   step2 cloud watch 이미지 참조
 ```sh
 $ stress -c 2
 ```
 
 3. 성능 개선 결과를 공유해주세요 (Smoke, Load, Stress 테스트 결과)
-    step2 folder 참조
+   step2 folder 참조
 ---
 
 ### 1단계 - 쿼리 최적화
@@ -72,6 +72,9 @@ $ stress -c 2
 
 - 활동중인(Active) 부서의 현재 부서관리자 중 연봉 상위 5위안에 드는 사람들이 최근에 각 지역별로 언제 퇴실했는지 조회해보세요. (사원번호, 이름, 연봉, 직급명, 지역, 입출입구분, 입출입시간)
 
+[쿼리 파일](step3/query.sql)
+
+![img_1.png](step3/result.png)
 ---
 
 ### 2단계 - 인덱스 설계
